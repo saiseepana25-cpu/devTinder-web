@@ -22,6 +22,9 @@ const Feed = () => {
   useEffect(() => {
     getFeed();
   }, []);
+  if (!userFeed) return null;
+  if (userFeed.data.length === 0)
+    return <h1 className="text-center my-10">No more users in feed</h1>;
   return (
     <div className="flex flex-col items-center justify-center my-10">
       {userFeed && <UserCard userFeed={userFeed.data[0]} />}
