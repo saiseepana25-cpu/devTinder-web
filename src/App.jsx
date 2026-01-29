@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Body from "./componenets/Body";
-import Login from "./componenets/Login";
-import Profie from "./componenets/Profie";
+import Body from "./componenets/Body.jsx";
+import Login from "./componenets/Login.jsx";
+import Profie from "./componenets/Profie.jsx";
 import { Provider } from "react-redux";
-import appStore from "./utils/appstore";
-import Feed from "./componenets/Feed";
-import Connections from "./componenets/Connections";
-import Requests from "./componenets/Requests";
+import appStore from "./utils/appStore.js";
+import Feed from "./componenets/Feed.jsx";
+import Connections from "./componenets/Connections.jsx";
+import Requests from "./componenets/Requests.jsx";
 
 function App() {
   return (
